@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 Roboto, Arial, sans-serif;
+  background: #eeeeff;
+  display: flex;
+}
+
+.app {
+  display: flex;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 0 20px #9999ff;
+}
+
+.board {
+  width: 300px;
+  height: 500px;
+  background: #ddddff;
+  display: flex;
+  flex-direction: column;
+}
+
+.shape {
+  margin: 100px 100px 0;
+}
+
+.square, .round {
+  width: 100px;
+  height: 100px;
+  background: #6666ff;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.dragged-square, .dragged-round {
+  width: 100px;
+  height: 100px;
+  background: #6666ff;
+  margin: auto;
+}
+
+.dragged-round {
+  border-radius: 50%;
+}
+
+canvas {
+  margin-right: auto;
+  background: #ccccff;
+}
+
+.clear-canvas-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  background: #ccccff;
+  color: #6666ff;
+  border-radius: .2rem;
+  padding: .5rem .75rem;
+  cursor: pointer;
+  font-size: .6rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px #9999ff;
+  transition: all ease .3s;
+  text-transform: uppercase;
+  outline: 0;
+  letter-spacing: .1rem;
+}
+
+.clear-canvas-button:hover {
+  box-shadow: 0 0 20px #9999ff;
+  background: #6666ff;
+  color: #ffffff;
+}
